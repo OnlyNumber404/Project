@@ -1,0 +1,29 @@
+(Red Zomby = 2x green zomby but helt --) --> 15pt
+(green zomby = normal zomby) --> 10pt
+(zomby king = slow but health ++) --> 20pt
+(mini zomby = zomby low health -- )--> 5pt
+
+{Zomby --> Move to x and y}
+
+Player sng digawe ndek turtle.Turtle() tadi buaten player.StatusList = {}
+
+Terus kon buaten function gawe add status e
+
+misal e
+
+def AddStatus(player, statusName, statusDuration):
+     player.StatusList[statusName] = {
+"timer" : 0,
+"duration" : statusDuration,
+}
+
+Terus iki tinggal di while true mu tdi buaten ngene
+
+while True:
+playerStatus = player.StatusList["BulletCD]
+if playerStatus["timer"] <         playerStatus["duration"]:
+player.StatusList["BulletCD"]["timer"] += durasi Time Sleep punyakmu misalle 0.01
+else:
+player.StatusList.pop("BulletCD")
+
+time.sleep(0.01)
